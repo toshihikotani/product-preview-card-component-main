@@ -17,18 +17,126 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    background-color: var(--cream);
+}
+
+h1 {
+    font-family: 'Fraunces-Bold';
+    margin: 10px 0px;
 }
 
 p {
+    font-family: 'Montserrat-Medium';
     font-size: 14px;
+    color: var(--dark-grayish-blue); 
+    margin: 12px 0px;
+}
+
+/* WRAPPER */
+#wrapper {
+    width: 345px;
+    height: 615px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMAGE */
+img {
+    content: url('/images/image-product-mobile.jpg');
+    width: 345px;
+    height: 245px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* DETAILS BOX*/
+#details-box {
+    width: 295px;
+    height: 325px;
+    background-color: var(--white);
+    padding: 20px 25px 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#details-box > #category {
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+#details-box > h1 {
+    color: var(--very-dark-blue);
+}
+
+#details-box > #description {
+    line-height: 1.5em;
+}
+
+/* DETAILS BOX > PRICE */
+#price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#price > h1 { 
+    color: var(--dark-cyan);
+    flex-basis: 50%;
+}
+
+#price > p { 
+    flex-basis: 50%;
+    text-decoration: line-through;
+}
+
+/* BUTTON */
+button {
+    width: 295px;
+    height: 48px;
+    background-color: var(--dark-cyan);
+    border-width: 0px;
+    border-radius: 5px;
+    font-family: 'Montserrat-Bold';
+    color: var(--white);
+}
+
+button::before {
+    content: url("../images/icon-cart.svg");
+    margin: 10px;
+}
+
+button:hover {
+   background-color: hsl(156, 59%, 24%);
 }
 
 /* ATTRIBUTION */
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+.attribution {
+    font-family: 'Montserrat-Medium';
+    font-size: 11px;
+    text-align: center;
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* PORTRAIT TABLET */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* LANDSCAPE TABLET */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* LAPTOP / DESKTOPS */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* LARGE LAPTOP AND DESKTOPS */
+@media only screen and (min-width: 1200px) {
+
 }
