@@ -43,7 +43,7 @@ p {
 
 /* IMAGE */
 img {
-    content: url('/images/image-product-mobile.jpg');
+    content: url('../images/image-product-mobile.jpg');
     width: 345px;
     height: 245px;
     border-top-left-radius: 10px;
@@ -140,7 +140,7 @@ button::before {
 
     /* IMAGE */
     img {
-        content: url('/images/image-product-desktop.jpg');
+        content: url('../images/image-product-desktop.jpg');
         width: 300px;
         height: 450px;
         border-top-left-radius: 10px;
