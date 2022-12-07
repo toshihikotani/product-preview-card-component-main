@@ -20,7 +20,7 @@ body {
     background-color: var(--cream);
 }
 
-h1 {
+h2 {
     font-family: 'Fraunces-Bold';
     margin: 0px 0px;
 }
@@ -29,11 +29,10 @@ p {
     font-family: 'Montserrat-Medium';
     font-size: 14px;
     color: var(--dark-grayish-blue); 
-
 }
 
-/* WRAPPER */
-#wrapper {
+/* MAIN CONTENT */
+main {
     width: 345px;
     height: 615px;
     margin: 25px auto;
@@ -63,10 +62,12 @@ img {
 #details-box > #category {
     text-transform: uppercase;
     letter-spacing: 0.5em;
+    font-size: 0.75em;
 }
 
 #details-box > h1 {
     color: var(--very-dark-blue);
+    line-height: 1.0em;
 }
 
 #details-box > #description {
@@ -80,7 +81,7 @@ img {
     align-items: center;
 }
 
-#price > h1 { 
+#price > h2 { 
     color: var(--dark-cyan);
     flex-basis: 50%;
 }
@@ -106,17 +107,6 @@ button::before {
     margin: 10px;
 }
 
-/* ATTRIBUTION */
-.attribution {
-    font-family: 'Fraunces-Bold';
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
 /* PORTRAIT TABLET */
 @media only screen and (min-width: 600px) {
 
@@ -130,8 +120,8 @@ button::before {
         margin-bottom: 15px;
     }
 
-    /* WRAPPER */
-    #wrapper {
+    /* MAIN CONTENT */
+    main {
         margin: 70px auto;
         width: 600px;
         height: 450px;
@@ -168,8 +158,8 @@ button::before {
 
 /* LAPTOP / DESKTOPS */
 @media only screen and (min-width: 992px) {
-    /* WRAPPER */
-    #wrapper {
+    /* MAIN CONTENT */
+    main {
         margin: 175px auto;
     }
 }
